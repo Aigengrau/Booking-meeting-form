@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Форма бронирования переговорной</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Форма бронирования переговорной</h1>
+      <form id="bookingForm">
+        <div>
+          <div>
+            <label for="towerSelect">Выбор башни</label>
+            <select name="tower" id="towerSelect">
+              <option value="A">Башня А</option>
+              <option value="B">Башня Б</option>
+            </select>
+          </div>
+          <div>
+            <label for="roomSelect">Выбор переговорной</label>
+            <select name="room" id="roomSelect"></select>
+          </div>
+          <div>
+            <label for="dateTimePicker">Выбор даты и времени</label>
+            <input type="date" id="datePicker" />
+            <input type="time" id="timePicker" />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="commentTextarea">Комментарий</label>
+            <textarea name="comment" id="commentTextarea" rows="3"></textarea>
+          </div>
+        </div>
+        <div>
+          <div>
+            <button type="submit">Отправить</button>
+          </div>
+          <div>
+            <button type="button" id="resetButton">Очистить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
